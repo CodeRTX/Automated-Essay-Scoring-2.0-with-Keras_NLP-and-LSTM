@@ -4,42 +4,35 @@ Enhancing automated essay scoring with advanced AI techniques using Keras-NLP an
 
 <div align="center">
     <img src="https://i.ibb.co/BrZf1MC/AESv2.jpg" alt="Automated Essay Scoring">
-</div></br>
+</div></br></br>
 
-In this project, we aim to develop an AI model that can score student essays, enhancing student learning outcomes. This project builds on previous competitions to improve essay scoring algorithms. We will guide you through the process of fine-tuning the **DebertaV3** model using **Ordinal Regression/Classification** to score student essays with KerasNLP.
+Overview
+Welcome to our project on Automated Essay Scoring 2.0 using KerasNLP and Keras. Our goal is to develop an AI model capable of scoring student essays, improving upon existing algorithms to enhance educational outcomes.
 
-## Project Overview
+Workflow
+Data Preprocessing
 
-This repository contains:
+We begin by loading and preprocessing text data from CSV files containing student essays. This includes tokenization using Keras' Tokenizer and padding sequences to a maximum length for model input.
+Model Architecture
 
-- A comprehensive guide to fine-tuning the DebertaV3 model
-- Training and inference notebooks
-- Visualizations of model performance and architecture
+Our model architecture utilizes a Bidirectional LSTM with attention mechanisms. This design helps capture both past and future context of words in the essays, enhancing the model's understanding of the text.
+GPU Setup
 
-**Note**: This notebook is backend-agnostic, supporting TensorFlow, PyTorch, and JAX backends. Best performance is achieved with `JAX`. For more details, explore the [Keras](https://keras.io/keras_3/) and [KerasNLP](https://keras.io/keras_nlp/) documentation.
+To expedite training, we configure TensorFlow to utilize available GPUs. This setup is crucial for handling the computational demands of training large-scale natural language models efficiently.
+Training and Evaluation
 
-### Model Training and Inference
+The model is trained using TensorFlow's MirroredStrategy for GPU utilization. We employ techniques such as early stopping and learning rate reduction to optimize training and prevent overfitting.
+Model Evaluation
 
-Find the training and inference notebook in the [/notebooks](./notebooks) directory. You can also access it on Kaggle [here](https://www.kaggle.com/code/awsaf49/aes-2-0-kerasnlp-starter).
+After training, we evaluate the model's performance using validation data. Metrics such as Mean Squared Error (MSE) are used to assess how well the model predicts essay scores.
+Model Architecture
+<div align="center">
+    <img src="model_architecture.png" alt="Model Architecture" width="700">
+</div>
+The above diagram illustrates the architecture of our essay scoring model. It shows the flow of data through various layers including embedding, bidirectional LSTM, attention, and dense layers for final scoring.
 
-### Results and Visualizations
-
-#### Model Loss (Train & Validation)
-
-![Model Loss](results/loss_plot.png)
-
-#### Workflow Diagram
-
-![Workflow](results/workflow_diagram.png)
-
-#### Model Architecture
-
-![Model Architecture](results/model_architecture.png)
-
-### Getting Started
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-
+Results and Contributions
+Our approach aims to significantly enhance the accuracy of automated essay scoring systems, thereby providing valuable insights into student performance.
+We welcome contributions and feedback to improve our model and methodology further.
+References
+Kaggle Competition
