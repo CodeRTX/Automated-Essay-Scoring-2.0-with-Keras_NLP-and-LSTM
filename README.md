@@ -2,7 +2,6 @@
 Enhancing automated essay scoring with advanced AI techniques using Keras-NLP and LSTM, aimed at improving educational outcomes through accurate assessment of student essays.
 
 <div align="center"><img src="https://keras.io/img/logo-small.png" alt="Keras logo" width="100"><br/>
-This starter notebook is provided by the Keras team.</div>
 
 <div align="center">
     <img src="https://i.ibb.co/BrZf1MC/AESv2.jpg" alt="Automated Essay Scoring">
