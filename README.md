@@ -1,7 +1,6 @@
-# Automated-Essay-Scoring-2.0-with-Keras_NLP-and-LSTM
+# Automated Essay Scoring 2.0 with KerasNLP & LSTM
 Enhancing automated essay scoring with advanced AI techniques using Keras-NLP and LSTM, aimed at improving educational outcomes through accurate assessment of student essays.
 
-<div align="center"><img src="https://keras.io/img/logo-small.png" alt="Keras logo" width="100"><br/>
 
 <div align="center">
     <img src="https://i.ibb.co/BrZf1MC/AESv2.jpg" alt="Automated Essay Scoring">
