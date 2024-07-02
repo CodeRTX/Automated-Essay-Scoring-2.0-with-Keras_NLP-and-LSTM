@@ -1,10 +1,10 @@
 # Automated Essay Scoring 2.0 with KerasNLP & LSTM
-Enhancing automated essay scoring with advanced AI techniques using Keras-NLP and LSTM, aimed at improving educational outcomes through accurate assessment of student essays.
+Enhancing automated essay scoring with advanced AI techniques using Keras-NLP and LSTM, aimed at improving educational outcomes through accurate assessment of student essays.<\br>
 
 
 <div align="center">
     <img src="https://i.ibb.co/BrZf1MC/AESv2.jpg" alt="Automated Essay Scoring">
-</div>
+</div><\br>
 
 In this project, we aim to develop an AI model that can score student essays, enhancing student learning outcomes. This project builds on previous competitions to improve essay scoring algorithms. We will guide you through the process of fine-tuning the **DebertaV3** model using **Ordinal Regression/Classification** to score student essays with KerasNLP.
 
